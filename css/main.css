@@ -38,4 +38,17 @@ ul li{
     background: linear-gradient(to top right, #22AB93, #19668D);
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     border-radius: 9px;  
+    perspective: 600px;
 }
+
+.turned {
+    transform: scaleX(-1);
+    animation-duration: 2s;
+    transition: all 0.5s ease-in-out;
+    background: #FFF;
+}
+
+/* .cardRotate {
+    animation-name: cardRotate;
+    animation-duration: 1s;
+   } */
