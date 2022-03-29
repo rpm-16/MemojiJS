@@ -1,0 +1,101 @@
+:root{
+    --gradient1: #22AB93;
+    --gradient2: #19668D;
+    --bakground: #CFD0CF;
+    --text: #434344;
+    --coincidence: #5ad66f;
+    --different: #f44336;
+}
+
+body {
+    background-color: var(--bakground);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: arial;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 42px;
+    line-height: 47px;
+}
+
+.container {
+    width: 700px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul li{
+    perspective: 600px;
+    list-style: none;
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    margin: 12.5px;
+    background: linear-gradient(to top right, #22AB93, #19668D);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border-radius: 9px;  
+    display: flex;
+    font-size: 75px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+ul li span{
+    display: none;
+}
+
+/*  перевернутая карточка */
+.turned {
+    transform: rotateY(180deg);
+    transition: all 0.2s ease-in-out;
+    background: #FFF;
+}
+.turned span {
+    display: block;
+}
+
+/*таймер*/
+.timer{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sovpali {
+    transition: all 0.2s ease-in-out;
+    background: var(--coincidence);
+    border: none;
+}
+
+.sovpali span {
+    display: block;
+}
+
+.nesovpali {
+    background: var(--different);
+    border: none;
+}
+
+
+.modal {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: #fff;
+
+}
